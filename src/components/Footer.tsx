@@ -1,7 +1,6 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Facebook, Instagram, Whatsapp, Mail, Phone, MapPin } from 'lucide-react';
+import { Facebook, Instagram, MessageCircle, Mail, Phone, MapPin } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
@@ -22,7 +21,7 @@ const Footer: React.FC = () => {
                 <Instagram size={20} />
               </a>
               <a href="https://wa.me/+923001234567" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white">
-                <Whatsapp size={20} />
+                <MessageCircle size={20} />
               </a>
             </div>
           </div>
