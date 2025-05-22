@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import { z } from 'zod';
@@ -125,7 +124,7 @@ const ContactPage = () => {
                       <Instagram size={24} />
                     </a>
                     <a href="https://wa.me/+923001234567" target="_blank" rel="noopener noreferrer" className="bg-blue-100 p-3 rounded-full text-institute-blue hover:bg-green-500 hover:text-white transition-colors">
-                      <Whatsapp size={24} />
+                      <MessageCircle size={24} />
                     </a>
                   </div>
                 </div>

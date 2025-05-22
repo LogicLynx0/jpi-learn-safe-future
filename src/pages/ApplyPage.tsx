@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
@@ -122,7 +123,7 @@ const ApplyPage = () => {
                   <Instagram size={20} />
                 </a>
                 <a href="https://wa.me/+923001234567" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-green-500">
-                  <Whatsapp size={20} />
+                  <MessageCircle size={20} />
                 </a>
               </div>
             </div>
