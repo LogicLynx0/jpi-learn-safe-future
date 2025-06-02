@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
@@ -43,6 +42,9 @@ const ApplyPage = () => {
   const [searchParams] = useSearchParams();
   const [filteredCourses, setFilteredCourses] = useState(courses);
   
+  // Filter to only show private courses for now
+  const availableCourses = courses.filter(course => course.type === 'Private');
+  
   const form = useForm<FormValues>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -63,22 +65,22 @@ const ApplyPage = () => {
   useEffect(() => {
     const courseIdFromUrl = searchParams.get('course');
     if (courseIdFromUrl) {
-      const selectedCourse = courses.find(course => course.id === courseIdFromUrl);
+      const selectedCourse = availableCourses.find(course => course.id === courseIdFromUrl);
       if (selectedCourse) {
         setValue('courseId', courseIdFromUrl);
         setValue('courseType', selectedCourse.type);
       }
     }
-  }, [searchParams, setValue]);
+  }, [searchParams, setValue, availableCourses]);
   
   // Filter courses based on selected course type
   useEffect(() => {
     if (courseType) {
-      setFilteredCourses(courses.filter(course => course.type === courseType));
+      setFilteredCourses(availableCourses.filter(course => course.type === courseType));
     } else {
-      setFilteredCourses(courses);
+      setFilteredCourses(availableCourses);
     }
-  }, [courseType]);
+  }, [courseType, availableCourses]);
 
   const onSubmit = (data: FormValues) => {
     // In a real app, you would send this data to your backend
@@ -211,7 +213,6 @@ const ApplyPage = () => {
                           </FormControl>
                           <SelectContent>
                             <SelectItem value="Private">Private</SelectItem>
-                            <SelectItem value="Govt">Government</SelectItem>
                           </SelectContent>
                         </Select>
                         <FormMessage />

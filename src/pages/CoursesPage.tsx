@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import NavBar from '@/components/NavBar';
@@ -14,6 +13,9 @@ const CoursesPage = () => {
   const [selectedCategory, setSelectedCategory] = useState('All');
   const [selectedType, setSelectedType] = useState('All');
   const [searchQuery, setSearchQuery] = useState('');
+
+  // Filter to only show private courses for now
+  const availableCourses = courses.filter(course => course.type === 'Private');
 
   // Initialize filters from URL parameters
   useEffect(() => {
@@ -39,7 +41,7 @@ const CoursesPage = () => {
     setSearchParams(params);
   }, [selectedCategory, selectedType, setSearchParams]);
 
-  const filteredCourses = courses.filter((course) => {
+  const filteredCourses = availableCourses.filter((course) => {
     const matchesCategory = selectedCategory === 'All' || course.category === selectedCategory;
     const matchesType = selectedType === 'All' || course.type === selectedType;
     const matchesSearch = searchQuery === '' || 

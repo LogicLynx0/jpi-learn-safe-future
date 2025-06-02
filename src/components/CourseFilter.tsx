@@ -54,14 +54,6 @@ const CourseFilter: React.FC<CourseFilterProps> = ({
             >
               Private
             </Button>
-            <Button 
-              variant={selectedType === 'Govt' ? "default" : "outline"} 
-              size="sm"
-              onClick={() => setSelectedType('Govt')}
-              className={selectedType === 'Govt' ? 'bg-institute-blue hover:bg-blue-800' : ''}
-            >
-              Govt
-            </Button>
           </div>
         </div>
       </Tabs>
