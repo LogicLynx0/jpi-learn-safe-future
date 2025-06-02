@@ -11,7 +11,7 @@ const AboutPage = () => {
       <NavBar />
       
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-institute-blue to-institute-teal text-white py-12">
+      <section className="bg-institute-primary text-white py-12">
         <div className="container mx-auto px-4">
           <h1 className="text-3xl md:text-4xl font-bold mb-3">About Jhang Polytechnic Institute</h1>
           <p className="text-lg opacity-90 max-w-3xl">
@@ -242,7 +242,7 @@ const AboutPage = () => {
       </section>
       
       {/* CTA Section */}
-      <section className="py-12 bg-institute-blue text-white">
+      <section className="py-12 bg-institute-primary text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between">
             <div className="mb-6 md:mb-0">
@@ -252,7 +252,7 @@ const AboutPage = () => {
               </p>
             </div>
             <div className="flex flex-wrap gap-4">
-              <Button asChild size="lg" className="bg-white text-institute-blue hover:bg-gray-100">
+              <Button asChild size="lg" className="bg-white text-institute-primary hover:bg-gray-100">
                 <Link to="/apply">Apply Now</Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">

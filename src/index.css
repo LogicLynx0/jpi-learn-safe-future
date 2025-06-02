@@ -16,7 +16,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 210 10% 23%;
 
-    --primary: 217 91% 60%;
+    --primary: 225 83% 33%;
     --primary-foreground: 0 0% 98%;
 
     --secondary: 210 40% 96%;
@@ -25,7 +25,7 @@
     --muted: 210 40% 96%;
     --muted-foreground: 210 6% 46%;
 
-    --accent: 217 91% 60%;
+    --accent: 225 83% 33%;
     --accent-foreground: 0 0% 98%;
 
     --destructive: 0 84% 60%;
@@ -33,13 +33,13 @@
 
     --border: 214 32% 91%;
     --input: 214 32% 91%;
-    --ring: 217 91% 60%;
+    --ring: 225 83% 33%;
 
     --radius: 0.5rem;
 
     /* Custom color variables */
-    --institute-blue: 217 91% 60%;
-    --institute-blue-dark: 217 91% 50%;
+    --institute-blue: 225 83% 33%;
+    --institute-blue-dark: 225 83% 28%;
     --institute-orange: 25 95% 53%;
     --institute-orange-dark: 25 95% 43%;
     --institute-gray-light: 210 20% 97%;
@@ -64,7 +64,7 @@
     --popover: 222 84% 5%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 217 91% 60%;
+    --primary: 225 83% 33%;
     --primary-foreground: 222 84% 5%;
 
     --secondary: 217 33% 17%;
@@ -81,11 +81,11 @@
 
     --border: 217 33% 17%;
     --input: 217 33% 17%;
-    --ring: 217 91% 60%;
+    --ring: 225 83% 33%;
 
     /* Custom dark mode colors */
-    --institute-blue: 217 91% 60%;
-    --institute-blue-dark: 217 91% 70%;
+    --institute-blue: 225 83% 33%;
+    --institute-blue-dark: 225 83% 38%;
     --institute-orange: 25 95% 53%;
     --institute-orange-dark: 25 95% 63%;
     --institute-gray-light: 217 33% 10%;
