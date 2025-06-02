@@ -63,12 +63,22 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
+				// Updated institute color scheme
 				institute: {
-					"blue": "#1e40af",
-					"teal": "#0d9488",
-					"orange": "#f97316",
-					"light": "#f0f9ff"
-				}
+					"blue": "hsl(var(--institute-blue))",
+					"blue-dark": "hsl(var(--institute-blue-dark))",
+					"orange": "hsl(var(--institute-orange))",
+					"orange-dark": "hsl(var(--institute-orange-dark))",
+					"light": "hsl(var(--institute-gray-light))",
+					"gray": "hsl(var(--institute-gray))",
+					"text": "hsl(var(--institute-text))",
+					"text-muted": "hsl(var(--institute-text-muted))"
+				},
+				// Status colors
+				success: "hsl(var(--success))",
+				warning: "hsl(var(--warning))",
+				error: "hsl(var(--error))",
+				info: "hsl(var(--info))"
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
